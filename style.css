@@ -1,0 +1,153 @@
+body {
+    background-color: #f8f8f8;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 600px;
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #005fa3;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-top: 0;
+    text-align: center;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  label {
+    color: #333;
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  select,
+  input[type="number"] {
+    appearance: none;
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 4px;
+    color: #333;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  button[type="submit"] {
+    background-color: #005fa3;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 18px;
+    margin-top: 30px;
+    padding: 12px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #004d8c;
+  }
+  
+  table {
+    border-collapse: collapse;
+    margin-top: 30px;
+    width: 100%;
+  }
+  
+  th,
+  td {
+    border: 1px solid #d9d9d9;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f1f1f1;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 480px) {
+    table {
+      display: block;
+      overflow-x: auto;
+    }
+  
+    thead {
+      display: none;
+    }
+  
+    tbody {
+      display: block;
+      width: 100%;
+    }
+  
+    tr {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    td {
+      display: block;
+      font-size: 14px;
+      text-align: right;
+      width: 100%;
+    }
+  
+    td::before {
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+  
+  .amount-input-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  input[type="number"] {
+    flex: 1;
+    appearance: none;
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 4px;
+    color: #333;
+    font-size: 16px;
+    padding: 10px;
+  }
+  
+  .coins {
+    color: #999;
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  

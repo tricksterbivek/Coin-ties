@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coin Transfer App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Coin Transfer App</h1>
+
+      <form id="transfer-form">
+        <label for="sender-name">Sender:</label>
+        <select id="sender-name" name="sender-name" required></select>
+
+        <label for="recipient-name">Recipient:</label>
+        <select id="recipient-name" name="recipient-name" required></select>
+
+        <label for="amount">Amount:</label>
+        <div class="amount-input-container">
+          <input type="number" id="amount" name="amount" min="1" max="100" required />
+          <span class="coins">coins</span>
+        </div>
+
+        <button type="submit">Transfer Coins</button>
+      </form>
+
+      <table id="user-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Balance</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
